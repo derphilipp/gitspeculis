@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /home/phw/gitspeculis
+source venv/bin/activate
+
+python gitspeculis.py -f gitspeculis.yaml

@@ -1,0 +1,4 @@
+salt-winrepo:
+    source: https://github.com/saltstack/salt-winrepo.git
+    target: /tmp/git-target
+    temp: /tmp/git-temporary
