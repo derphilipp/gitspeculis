@@ -46,6 +46,8 @@ class Job(object):
         """
         If a (temporary) repository already exists
         """
+        if not os.path.exists(self.temp):
+            return False
         try:
             git.Repo(self.temp)
         except git.exc.InvalidGitRepositoryError:
